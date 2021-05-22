@@ -1,0 +1,37 @@
+.header{
+    font-size: 50px;
+    color: white;
+    padding-right: 300px;
+    margin-left: 35%;
+}
+.header_link{
+    font-size: 20px; 
+}
+
+.speech{
+    margin: 0 22% 0 22%;
+    border: 2px solid gold;
+    border-radius: 10%;
+    padding: 5%;
+    background-color: greenyellow;
+}
+
+.speech_h1{
+    color: #191970;
+    font-family: 'Carter One';
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.speech_h3{
+    color:#4682B4;
+    font-family: 'Amaranth';
+    font-size: 22px;
+    text-align: center;
+}
+
+.award{
+    margin-left: 30%;
+}
