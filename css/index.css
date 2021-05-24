@@ -33,5 +33,11 @@
 }
 
 .award{
-    margin-left: 30%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 20% 10% 20%;
+}
+
+.award_1{
+    width: 20em;
 }
