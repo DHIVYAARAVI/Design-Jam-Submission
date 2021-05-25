@@ -13,13 +13,6 @@
     margin: 5% 20% 5% 20%
 }
 
-.h3_style{
-    font-family: 'Bowlby One SC';
-    font-size: 35px;
-    color: #800000;
-    margin-left: 30%;
-}
-
 .card_style{
     display: grid;
     background-color: #BDB76B;
@@ -39,3 +32,51 @@
     color: #800000;
     font-size: 25px;
 }
+
+.rotate {
+    animation: rotation 5s infinite;
+    margin-left: 35%;
+    padding: 5%;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .rotate_background{
+      background-color:#BDB76B;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .header{
+        font-size: 35px;
+        margin-left: 10%;
+        padding-right: 0;
+    }
+    .header_link{
+        font-size: 20px; 
+        display: inline-block;
+    }
+    .choco{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .h3_style{
+        font-size: 30px;
+        margin-left: 15%;
+    }
+
+    .card_style{
+        display: inline;
+    }
+    .rotate{
+      margin-left:5%;
+    }
+  }
