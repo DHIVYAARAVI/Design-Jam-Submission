@@ -10,18 +10,31 @@
     <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
     <title>Home Page - Dolly </title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+<body id="full">
+    <nav  id='navbar'  class="navbar navbar-expand-lg bg-warning navbar-dark" >
       <h1 class="header">Dolly Donuts</h1>
-        <ul class="navbar-nav header_link">
+      <button id='toggle' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav" style="font-size: 20px;">
           <li class="nav-item active">
-            <a class="nav-link" style="padding-right: 80px;" href="#">Home</a>
+            <a class="nav-link" style="padding-right: 80px;" href="index.html">Home</a>
           </li>
+          <li></li>
           <li class="nav-item active">
-            <a class="nav-link" href="donut.html">Donuts</a>
+            <a class="nav-link" style="padding-right: 40px;" href="donut.html">Donuts</a>
+          </li>
+          <li></li>
+          <li>
+            <label  class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
       
       <div id="demo" class="carousel slide" data-ride="carousel"  style=" background-color: #FFFACD;">
         <!-- Indicators -->
@@ -66,8 +79,8 @@
       </div>
       <br><br>
 
-      <div class="speech">
-        <h1 class="speech_h1">WELCOME TO DOLLY DOUGHNUTS ! ! !</h1>
+      <div id="para" class="speech">
+        <h1 id="para_h1" class="speech_h1">WELCOME TO DOLLY DOUGHNUTS ! ! !</h1>
         <h3 class="speech_h3">The donut has often been characterized as people's favourite food. The donut is a sweet snack which usually deep fried
             from flour dough. It is good for children, woman and man. All kids loves to eat doughnut . We prepare fresh Donuts, know for good
             service and got the Super Duper Donut Award.
@@ -75,14 +88,14 @@
       </div><br><br>
 
       <div class="award">
-        <div><img src="images/20.jpg" class="award_1"></div>
+        <div><img src="images/20.png" class="award_1"></div>
         <div></div>
         <div><img src="images/19.png" class="award_2"></div>        
       </div><br><br>
 
       <div id='contacts'>
-        <h1 class="contactsh1">Contact Us</h1>
-        <div class='allimg'>
+        <h1 id='contacts_h1' class="contactsh1">Contact Us</h1>
+        <div id = 'contacts_img' class='allimg'>
           <a class="foot-link" href="https://mail.google.com/"><img src="https://img.icons8.com/fluent/48/000000/gmail--v1.png" width="120px" height="120px"/></a>
           <div></div>
           <a  class="foot-link" href="https://www.linkedin.com/dolly_donut"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="120px" height="120px"/></a>
@@ -90,8 +103,8 @@
           <a   class="foot-link" href="https://www.instagram.com/dollydonut/"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="120px" height="120px"/></a>
         </div>
       </div><br><br>
-
-
+ 
+      <script src="./js/index.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

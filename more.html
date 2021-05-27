@@ -10,22 +10,33 @@
     <link href='https://fonts.googleapis.com/css?family=Fanwood Text' rel='stylesheet'>
     <title>More Donuts - Dolly </title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
-        <h1 class="header">Dolly Donuts</h1>
-          <ul class="navbar-nav header_link">
-            <li class="nav-item active">
-              <a class="nav-link" style="padding-right: 80px;" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="donut.html">Donuts</a>
-            </li>
-          </ul>
+<body id="full">
+    <nav  id='navbar'  class="navbar navbar-expand-lg bg-warning navbar-dark" >
+      <h1 class="header">Dolly Donuts</h1>
+      <button id='toggle' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav header_link">
+          <li class="nav-item active">
+            <a class="nav-link" style="padding-right: 80px;" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" style="padding-right: 40px;" href="donut.html">Donuts</a>
+          </li>
+          <li>
+            <label  class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="choco">
           <div class="card">
-            <div class=" card_style">
+            <div id="card1" class=" card_style">
             <img class="card-img-top card_img" src="images/12.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -37,7 +48,7 @@
           </div><br><br>
 
           <div class="card">
-            <div class=" card_style">
+            <div id="card2" class=" card_style">
             <img class="card-img-top card_img" src="images/13.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -49,7 +60,7 @@
           </div><br><br>
 
           <div class="card">
-            <div class=" card_style">
+            <div id="card3" class=" card_style">
             <img class="card-img-top card_img" src="images/14.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -60,12 +71,12 @@
             </div>
           </div><br><br>
 
-          <div class="rotate_background">
+          <div  id="card4" class="rotate_background">
             <img src="images/22.png" class="rotate linear infinite" width="325"/>  
           </div><br><br>
 
           <div class="card">
-            <div class=" card_style">
+            <div  id="card5" class=" card_style">
             <img class="card-img-top card_img" src="images/15.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -77,7 +88,7 @@
           </div><br><br>
 
           <div class="card">
-            <div class=" card_style">
+            <div  id="card6" class=" card_style">
             <img class="card-img-top card_img" src="images/16.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -89,7 +100,7 @@
           </div><br><br>
 
           <div class="card">
-            <div class=" card_style">
+            <div  id="card7" class=" card_style">
             <img class="card-img-top card_img" src="images/17.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -101,7 +112,7 @@
           </div><br><br>
 
           <div class="card">
-            <div class=" card_style">
+            <div  id="card8" class=" card_style">
             <img class="card-img-top card_img" src="images/18.jpg" alt="Card image">
             <div></div>
             <div class="card-body">
@@ -113,6 +124,7 @@
           </div><br><br>    
     </div>
 
+    <script src="./js/more.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

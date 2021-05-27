@@ -10,64 +10,75 @@
     <link href='https://fonts.googleapis.com/css?family=Fanwood Text' rel='stylesheet'>
     <title>Donuts - Dolly </title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
-        <h1 class="header">Dolly Donuts</h1>
-          <ul class="navbar-nav header_link">
-            <li class="nav-item active">
-              <a class="nav-link" style="padding-right: 80px;" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="donut.html">Donuts</a>
-            </li>
-          </ul>
+<body id="full">
+    <nav  id='navbar'  class="navbar navbar-expand-lg bg-warning navbar-dark" >
+      <h1 class="header">Dolly Donuts</h1>
+      <button id='toggle' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav header_link">
+          <li class="nav-item active">
+            <a class="nav-link" style="padding-right: 80px;" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" style="padding-right: 40px;" href="donut.html">Donuts</a>
+          </li>
+          <li>
+            <label  class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
     </nav><br><br>
 
     <div class="choco">
-        <h3 class="h3_style">Recommended</h3><br>
+        <h3 id="h3_style" class="h3_style">Recommended</h3><br>
         <div class="card">
-          <div class=" card_style">
+          <div id="card1" class=" card_style">
           <img class="card-img-top card_img" src="images/8.jpg" alt="Card image">
           <div></div>
           <div class="card-body">
-            <h4 class="card-title card_head" style="font-weight: bold;">Chocolate Frosted Doughnut</h4>
-            <p class="card-text">Chocolate Glazed Donut is delicious, yeasted, fluffy, fried, and
+            <h4 id="card_head1" class="card-title card_head" style="font-weight: bold;">Chocolate Frosted Doughnut</h4>
+            <p id="card_text1" class="card-text">Chocolate Glazed Donut is delicious, yeasted, fluffy, fried, and
                everything that makes a storebought Dunkin' donut so good.<br>&#8377; 30</p>
           </div>
           </div>
         </div><br><br>
 
         <div class="card">
-          <div class=" card_style">
+          <div id="card2" class=" card_style">
           <img class="card-img-top card_img" src="images/9.jpg" alt="Card image">
           <div></div>
           <div class="card-body">
-            <h4 class="card-title card_head">Cruller</h4>
-            <p class="card-text">A French cruller is a fluted, ring-shaped doughnut made from 
+            <h4 id="card_head2" class="card-title card_head" style="font-weight: bold;">Cruller</h4>
+            <p id="card_text2" class="card-text">A French cruller is a fluted, ring-shaped doughnut made from 
               choux pastry with a light airy texture.<br>&#8377; 40</p>
           </div>
           </div>
         </div><br><br>
 
         <div class="card">
-          <div class=" card_style">
+          <div id="card3" class=" card_style">
           <img class="card-img-top card_img" src="images/10.jpg" alt="Card image">
           <div></div>
           <div class="card-body">
-            <h4 class="card-title card_head">Strawberry Frosted Doughnut</h4>
-            <p class="card-text">Spongey white cake doughnuts are topped with a fresh strawberry glaze
+            <h4 id="card_head3" class="card-title card_head" style="font-weight: bold;">Strawberry Frosted Doughnut</h4>
+            <p id="card_text3" class="card-text">Spongey white cake doughnuts are topped with a fresh strawberry glaze
                for a sweet breakfast treat!.<br>&#8377; 50</p>
           </div>
           </div>
         </div><br><br>
 
         <div class="card">
-          <div class=" card_style">
+          <div id="card4" class=" card_style">
           <img class="card-img-top card_img" src="images/11.jpg" alt="Card image">
           <div></div>
           <div class="card-body">
-            <h4 class="card-title card_head">Jelly Doughnut</h4>
-            <p class="card-text">A jelly doughnut or jam doughnut, is a doughnut filled with 
+            <h4 id="card_head4" class="card-title card_head" style="font-weight: bold;">Jelly Doughnut</h4>
+            <p id="card_text4" class="card-text">A jelly doughnut or jam doughnut, is a doughnut filled with 
               jam filling. <br>&#8377; 20</p>
           </div>
           </div>
@@ -76,11 +87,11 @@
       </div>
       <br><br>
 
-      <button class="view_btn" >
+      <button id="view_btn" class="view_btn" >
       <a href="more.html" class="view_a">View More</a>
       </button><br><br><br><br>
 
-
+      <script src="./js/donut.js" ></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
